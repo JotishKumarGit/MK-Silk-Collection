@@ -1,0 +1,593 @@
+/* css  */
+
+:root {
+    --primary-color: #8B0000;
+    --secondary-color: #FFD700;
+    --accent-color: #C41E3A;
+    --dark-color: #2C1810;
+    --light-color: #FFF8DC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    overflow-x: hidden;
+}
+
+/* Topbar */
+.topbar {
+    background: linear-gradient(135deg, var(--dark-color), var(--primary-color));
+    color: var(--secondary-color);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.topbar a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.topbar a:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Header */
+.navbar {
+    background: linear-gradient(to right, var(--primary-color), var(--accent-color)) !important;
+    padding: 15px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--secondary-color) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background: var(--secondary-color);
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover:after {
+    width: 80%;
+}
+
+.dropdown-menu {
+    background: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.dropdown-item {
+    color: white !important;
+    transition: 0.3s;
+}
+
+.dropdown-item:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color) !important;
+}
+
+/* Banner */
+.banner {
+    height: 100vh;
+    background: linear-gradient(rgba(139, 0, 0, 0.7), rgba(196, 30, 58, 0.7)),
+        url('./img/Banarasi_Silk_Sarees_4.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: url('./img/Banarasi_Silk_Sarees_3.jpeg'); */
+    animation: pattern-move 20s linear infinite;
+}
+
+@keyframes pattern-move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100px 100px;
+    }
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h1 {
+    font-size: 60px;
+    color: var(--secondary-color);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    border: 3px solid var(--secondary-color);
+    padding: 20px;
+    display: inline-block;
+    background: rgba(139, 0, 0, 0.5);
+}
+
+.banner p {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.btn-custom {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.btn-custom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
+    background: white;
+}
+
+
+
+/* About Section */
+.about-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--light-color), white);
+    position: relative;
+}
+
+.about-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: var(--secondary-color);
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+.about-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(139, 0, 0, 0.2);
+    border-left: 5px solid var(--primary-color);
+}
+
+.section-title {
+    font-size: 42px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: var(--secondary-color);
+}
+
+.info-box {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-box i {
+    font-size: 40px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+/* Products Section */
+.products-section {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, white, var(--light-color));
+}
+
+.product-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin-bottom: 30px;
+    border: 2px solid transparent;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(139, 0, 0, 0.3);
+    border-color: var(--secondary-color);
+}
+
+.product-img {
+    height: 300px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: url('./img/g-2.jpeg'); */
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.product-img i {
+    font-size: 80px;
+    color: var(--secondary-color);
+}
+
+.product-body {
+    padding: 25px;
+}
+
+.product-title {
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Services Slider */
+.services-section {
+    padding: 100px 0;
+    background: var(--dark-color);
+    color: white;
+}
+
+.service-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-slide {
+    display: none;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.service-slide.active {
+    display: block;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.service-icon {
+    font-size: 80px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.slider-nav {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.slider-btn {
+    background: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider-btn:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+/* Gallery */
+.gallery-section {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, var(--light-color), white);
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-img {
+    height: 300px;
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.gallery-img i {
+    font-size: 60px;
+    color: var(--secondary-color);
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(139, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* Modal */
+.modal-content {
+    background: transparent;
+    border: none;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.blog-card {
+    background: linear-gradient(135deg, white, var(--light-color));
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(139, 0, 0, 0.3);
+}
+
+.blog-img {
+    height: 250px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-img i {
+    font-size: 70px;
+    color: var(--secondary-color);
+}
+
+.blog-body {
+    padding: 30px;
+}
+
+.blog-date {
+    color: var(--secondary-color);
+    background: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--light-color), white);
+}
+
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(139, 0, 0, 0.2);
+}
+
+.form-control {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.map-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    height: auto;
+}
+
+/* Newsletter */
+.newsletter-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 80px 0;
+    color: white;
+}
+
+.newsletter-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--secondary-color);
+}
+
+.newsletter-input {
+    padding: 15px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    width: 70%;
+}
+
+.newsletter-btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    width: 30%;
+}
+
+/* Footer */
+.footer {
+    background: var(--dark-color);
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-title {
+    color: var(--secondary-color);
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--secondary-color);
+    padding-left: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .newsletter-input,
+    .newsletter-btn {
+        width: 100%;
+        border-radius: 50px;
+        margin: 5px 0;
+    }
+}
