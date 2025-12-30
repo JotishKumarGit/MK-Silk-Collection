@@ -662,3 +662,98 @@ body {
         margin: 5px 0;
     }
 }
+
+
+
+/* bread crumb css */
+.breadcrumb-section {
+    position: relative;
+    height: 300px;
+    /* adjust height as needed */
+    background-image: url("./img/Banarasi_Silk_Sarees_2.jpeg");
+    /* change your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.breadcrumb-section .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* dark opacity */
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
+}
+
+/* Modal content */
+#enquiryModal .modal-content {
+    background-color: #ffffff; /* simple white background */
+    border-radius: 10px;
+    border: 1px solid #ddd; /* light border */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Header */
+#enquiryModal .modal-header {
+    background-color: #f8f9fa; /* light grey header */
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Close button */
+#enquiryModal .btn-close {
+    filter: none;
+}
+
+/* Input fields */
+#enquiryModal .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+}
+
+/* Input focus effect */
+#enquiryModal .form-control:focus {
+    border-color: #007bff; /* blue highlight */
+    box-shadow: none;
+    outline: none;
+}
+
+/* Footer buttons */
+#enquiryModal .modal-footer {
+    border-top: 1px solid #ddd;
+    justify-content: flex-end;
+}
+
+/* Close button style */
+#enquiryModal .btn-secondary {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+/* Send button style */
+#enquiryModal .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
