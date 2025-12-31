@@ -1,118 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.K. silk collection - Premium Banarasi Silk Sarees</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-
-<body>
-
-    <!-- Topbar -->
-    <div class="topbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <i class="fas fa-phone"></i> <a href="tel:6387737594">6387737594</a>
-                    <i class="fas fa-envelope ms-3"></i> <a
-                        href="mailto:kursidalam81@gmail.com">kursidalam81@gmail.com</a>
-                </div>
-                <div class="col-md-6 text-end">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">M K Silk Collection</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
-                            data-bs-toggle="dropdown">Products</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Banarasi_Silk_Saree.html">Banarasi Silk Saree</a></li>
-                            <li><a class="dropdown-item" href="Silk_Scrap_Border_Strip.html">Silk Scrap Border Strip</a>
-                            </li>
-                            <li><a class="dropdown-item" href="Rangkat_Saree_Kadwa.html">Rangkat Saree Kadwa</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Breadcrumb Section -->
-    <section class="breadcrumb-section text-white d-flex align-items-center">
-        <div class="overlay"></div>
-
-        <div class="container text-center position-relative">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h1 class="page-title">Banarasi Silk Saree</h1>
-
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item">
-                                <a href="#" class="text-white">Home</a>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <a href="#" class="text-white">Pages</a>
-                            </li>
-                            <li class="breadcrumb-item active text-white" aria-current="page">
-                                Banarasi Silk Saree
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- products details -->
-    <div class="container my-5">
-        <div class="row align-items-center">
-            <!-- Product Image -->
-            <div class="col-md-6">
-                <img src="assets/img/Banarasi_Silk_Sarees_3.jpeg" alt="Banarasi Silk Saree" class="img-fluid rounded">
-            </div>
-
-            <!-- Product Details -->
-            <div class="col-md-6">
-                <h2>Banarasi Silk Saree</h2>
-                <p><strong>Fabric:</strong> Pure Silk</p>
-                <p><strong>Design:</strong> Traditional Banarasi with Zari Work</p>
-                <p><strong>Color:</strong> Red & Gold</p>
-                <p><strong>Occasion:</strong> Weddings, Festivals, Special Events</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus
-                    error sit voluptatem.</p>
-
-                <!-- Enquiry Button -->
-                <a href="" data-bs-toggle="modal" data-bs-target="#enquiryModal"
-                    class="btn btn-primary mt-3">Enquiry</a>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -181,8 +66,7 @@
             </div>
         </div>
     </footer>
-
-
+    
     <!-- enquiry modal -->
     <div class="modal" id="enquiryModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
@@ -228,10 +112,9 @@
             </div>
         </div>
     </div>
-
     <!-- script for sending enquiry email -->
     <script>
-        document.getElementById('sendEmailButton').addEventListener('click', function (e) {
+        document.getElementById('sendEmailButton').addEventListener('click', function(e) {
             e.preventDefault();
 
             const name = document.getElementById('name').value;
@@ -243,7 +126,7 @@
             // Check if any of the fields are empty
             if (!name || !email || !phone || !subject || !message) {
                 alert("Please fill all the fields");
-                return;  // Exit the function if any field is empty
+                return; // Exit the function if any field is empty
             }
 
             const mailtoLink = `mailto:kursidalam81@gmail.com?subject=${encodeURIComponent(subject)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
@@ -258,33 +141,33 @@
 
     <!-- home slider js -->
     <script>
-            (function () {
-                const homeSlides = document.querySelectorAll('.home-slide');
-                const homePrev = document.querySelector('.home-prev');
-                const homeNext = document.querySelector('.home-next');
-                let homeCurrent = 0;
+        (function() {
+            const homeSlides = document.querySelectorAll('.home-slide');
+            const homePrev = document.querySelector('.home-prev');
+            const homeNext = document.querySelector('.home-next');
+            let homeCurrent = 0;
 
-                function showHomeSlide(index) {
-                    homeSlides.forEach(slide => slide.classList.remove('active'));
-                    homeSlides[index].classList.add('active');
-                }
+            function showHomeSlide(index) {
+                homeSlides.forEach(slide => slide.classList.remove('active'));
+                homeSlides[index].classList.add('active');
+            }
 
-                homeNext.addEventListener('click', () => {
-                    homeCurrent = (homeCurrent + 1) % homeSlides.length;
-                    showHomeSlide(homeCurrent);
-                });
+            homeNext.addEventListener('click', () => {
+                homeCurrent = (homeCurrent + 1) % homeSlides.length;
+                showHomeSlide(homeCurrent);
+            });
 
-                homePrev.addEventListener('click', () => {
-                    homeCurrent = (homeCurrent - 1 + homeSlides.length) % homeSlides.length;
-                    showHomeSlide(homeCurrent);
-                });
+            homePrev.addEventListener('click', () => {
+                homeCurrent = (homeCurrent - 1 + homeSlides.length) % homeSlides.length;
+                showHomeSlide(homeCurrent);
+            });
 
-                // Auto slide every 5 seconds
-                setInterval(() => {
-                    homeCurrent = (homeCurrent + 1) % homeSlides.length;
-                    showHomeSlide(homeCurrent);
-                }, 5000);
-            })();
+            // Auto slide every 5 seconds
+            setInterval(() => {
+                homeCurrent = (homeCurrent + 1) % homeSlides.length;
+                showHomeSlide(homeCurrent);
+            }, 5000);
+        })();
     </script>
 
     <!-- whole web js -->
@@ -310,7 +193,7 @@
         setInterval(() => changeSlide(1), 5000);
 
         // Contact Form WhatsApp Integration
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
@@ -324,7 +207,7 @@
         });
 
         // Newsletter Form
-        document.getElementById('newsletterForm').addEventListener('submit', function (e) {
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const email = document.getElementById('newsletterEmail').value;
             alert('Thank you for subscribing! We will keep you updated with our latest collections.');
@@ -333,7 +216,7 @@
 
         // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
