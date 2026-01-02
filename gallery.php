@@ -268,6 +268,47 @@
                     </div>
                 </div>
 
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal22">
+                        <div class="gallery-img">
+                            <img src="assets/img/g-22.jpeg" height="auto" width="100%" alt="">
+                        </div>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" style="font-size: 50px; color: white;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal23">
+                        <div class="gallery-img">
+                            <img src="assets/img/g-23.jpeg" height="auto" width="100%" alt="">
+                        </div>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" style="font-size: 50px; color: white;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal24">
+                        <div class="gallery-img">
+                            <img src="assets/img/g-24.jpeg" height="auto" width="100%" alt="">
+                        </div>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" style="font-size: 50px; color: white;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal25">
+                        <div class="gallery-img">
+                            <img src="assets/img/g-25.jpeg" height="auto" width="100%" alt="">
+                        </div>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus" style="font-size: 50px; color: white;"></i>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -588,7 +629,66 @@
             </div>
         </div>
     </div>
+    <!-- Modal 22 -->
+    <div class="modal fade" id="galleryModal22" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" style="z-index: 10;"></button>
+                    <div
+                        style="height:80vh; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, var(--primary-color), var(--dark-color));">
+                        <img src="assets/img/g-22.jpeg" alt="" style="height:100%; width:auto; object-fit:contain;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 23 -->
+    <div class="modal fade" id="galleryModal23" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" style="z-index: 10;"></button>
+                    <div
+                        style="height:80vh; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, var(--primary-color), var(--dark-color));">
+                        <img src="assets/img/g-23.jpeg" alt="" style="height:100%; width:auto; object-fit:contain;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 24 -->
+    <div class="modal fade" id="galleryModal24" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" style="z-index: 10;"></button>
+                    <div
+                        style="height:80vh; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, var(--primary-color), var(--dark-color));">
+                        <img src="assets/img/g-24.jpeg" alt="" style="height:100%; width:auto; object-fit:contain;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 25 -->
+    <div class="modal fade" id="galleryModal25" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" style="z-index: 10;"></button>
+                    <div
+                        style="height:80vh; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, var(--primary-color), var(--dark-color));">
+                        <img src="assets/img/g-25.jpeg" alt="" style="height:100%; width:auto; object-fit:contain;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-   
     <!-- footer -->
     <?php include('footer.php') ?>
